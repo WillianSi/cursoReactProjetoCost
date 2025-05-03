@@ -25,7 +25,7 @@ function Project() {
     // Para ver o loading
     setTimeout(
       () =>
-        fetch(`http://localhost:5000/projects/${id}`, {
+        fetch(`https://cost-api.onrender.com/projects/${id}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ function Project() {
       return false
     }
 
-    fetch(`http://localhost:5000/projects/${project.id}`, {
+    fetch(`https://cost-api.onrender.com/projects/${project.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
